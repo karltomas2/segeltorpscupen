@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Segeltorpscupen 25–26 april 2026 — spickkomihåg</title>
+<style>
+  :root {
+    --brand: #081B57;
+    --brand-light: #1e2f70;
+    --brand-soft: #eef1fb;
+    --accent: #f6c100;
+    --bg: #f5f6fa;
+    --text: #111;
+    --muted: #555;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+  }
+  header {
+    background: var(--brand);
+    color: white;
+    padding: 28px 20px 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border-bottom: 4px solid var(--accent);
+  }
+  header img.logo {
+    width: 64px;
+    height: auto;
+    background: white;
+    border-radius: 8px;
+    padding: 4px;
+  }
+  header h1 { margin: 0; font-size: 1.5rem; line-height: 1.2; }
+  header p.sub { margin: 4px 0 0; font-size: 0.95rem; opacity: 0.9; }
+
+  nav.jump {
+    background: var(--brand-light);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 8px 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  nav.jump a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-right: 6px;
+    padding: 6px 10px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.1);
+    display: inline-block;
+  }
+  nav.jump a:hover { background: var(--accent); color: var(--brand); }
+
+  main { max-width: 860px; margin: 0 auto; padding: 20px; }
+  section {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 20px 22px;
+    margin-bottom: 18px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    scroll-margin-top: 60px;
+  }
+  section h2 {
+    margin: 0 0 12px;
+    font-size: 1.2rem;
+    color: var(--brand);
+    border-bottom: 2px solid var(--brand);
+    padding-bottom: 6px;
+  }
+  section h3 {
+    margin: 16px 0 6px;
+    font-size: 1rem;
+    color: var(--brand-light);
+  }
+  ul, ol { margin: 0 0 8px 22px; padding: 0; }
+  li { margin: 4px 0; }
+  a { color: var(--brand); }
+
+  .callout {
+    background: #fff4cc;
+    border-left: 4px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin: 10px 0;
+    font-size: 0.95rem;
+  }
+  .callout.info {
+    background: var(--brand-soft);
+    border-left-color: var(--brand);
+  }
+
+  .role-tag {
+    display: inline-block;
+    background: var(--brand);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+  }
+  .hall {
+    background: var(--brand-soft);
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .hall strong { color: var(--brand); display: block; margin-bottom: 4px; font-size: 1rem; }
+
+  figure {
+    margin: 10px 0;
+    background: #fafafa;
+    border: 1px solid #e4e6ee;
+    border-radius: 6px;
+    padding: 8px;
+  }
+  figure img { width: 100%; height: auto; border-radius: 4px; display: block; }
+  figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 6px; text-align: center; }
+  .thumbrow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px;
+  }
+
+  code {
+    background: #f0f2f8;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+
+  table.table-clean {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+    font-size: 0.95rem;
+  }
+  table.table-clean th, table.table-clean td {
+    text-align: left;
+    padding: 6px 10px;
+    border-bottom: 1px solid #e4e6ee;
+  }
+  table.table-clean th { background: var(--brand); color: white; }
+
+  .per-hall {
+    border-left: 3px solid var(--brand);
+    padding-left: 12px;
+    margin: 10px 0;
+  }
+  .per-hall strong { color: var(--brand); }
+
+  footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--muted);
+    padding: 24px 0 40px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img class="logo" src="images/logo.png" alt="Segeltorps IF IBF">
+  <div>
+    <h1>Segeltorpscupen 2026</h1>
+    <p class="sub">Lördag 25 – söndag 26 april · P13 &amp; P14 · sammanställt från Maria Brolins planeringsgrupp</p>
+  </div>
+</header>
+
+<nav class="jump">
+  <a href="#oversikt">Översikt</a>
+  <a href="#lankar">Cupens sidor</a>
+  <a href="#scheman">Scheman</a>
+  <a href="#sekretariat">Sekretariat</a>
+  <a href="#cafe">Café</a>
+  <a href="#grill">Grill &amp; dricka</a>
+  <a href="#hallansvarig">Hallansvarig</a>
+  <a href="#bakning">Bakning</a>
+  <a href="#fredag">Fredag kväll</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<main>
+
+<section id="oversikt">
+  <h2>Översikt — när &amp; var</h2>
+  <div class="grid">
+    <div class="hall">
+      <strong>Glömstahallen</strong>
+      P13 båda dagarna.<br>
+      Första match <strong>08:00</strong>, samling 07:15–07:30.
+    </div>
+    <div class="hall">
+      <strong>Kvarnbergshallen</strong>
+      P14 <em>lördag</em>. Ersatte Utsälje när Huddinge handboll inte flyttade.<br>
+      Matcher 08:00–11:45, lunch 11:45–13:00, matcher 13:25–19:30.<br>
+      Hallen tillgänglig från 07:00.
+    </div>
+    <div class="hall">
+      <strong>Utsäljehallen</strong>
+      P14 <em>söndag</em>.
+    </div>
+  </div>
+</section>
+
+<!-- CUPENS SIDOR -->
+<section id="lankar">
+  <h2>Cupens sidor</h2>
+  <ul>
+    <li><strong>Cupens hemsida:</strong> <a href="https://segeltorpscupen.cupmanager.net/">segeltorpscupen.cupmanager.net</a></li>
+    <li><strong>Alla matcher &amp; live-resultat:</strong> <a href="https://segeltorpscupen.cupmanager.net/2026/result/games?draggable=true">matcher (alla lag)</a></li>
+    <li><strong>Segeltorps P13 — lag 1:</strong> <a href="https://segeltorpscupen.cupmanager.net/2026/result/team/74526967">lagsida</a></li>
+    <li><strong>Segeltorps P13 — lag 2:</strong> <a href="https://segeltorpscupen.cupmanager.net/2026/result/team/74526971">lagsida</a></li>
+  </ul>
+</section>
+
+<!-- SCHEMAN -->
+<section id="scheman">
+  <h2>Bemanningsscheman (översikt)</h2>
+  <p>Senaste gällande scheman efter Kvarnberga-bytet 20/4. Alla roller samlade per dag.</p>
+  <div class="thumbrow">
+    <figure>
+      <img src="images/schema-lordag.jpg" alt="Lördagens bemanningsschema">
+      <figcaption>Lördag — Glömsta + Kvarnberga</figcaption>
+    </figure>
+    <figure>
+      <img src="images/schema-sondag.jpg" alt="Söndagens bemanningsschema">
+      <figcaption>Söndag — Glömsta + Utsälje</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- SEKRETARIAT -->
+<section id="sekretariat">
+  <h2><span class="role-tag">Roll</span>Sekretariat</h2>
+
+  <h3>Arbetsuppgifter</h3>
+  <ul>
+    <li>Hålla koll på tidtagning och ev resultat.</li>
+    <li>Påminn om caféet, säg till när lunchen stänger snart.</li>
+    <li>Speakerstil: "Nu blir det match mellan X och X".</li>
+    <li>Sätt på musik i paus (ingår i rollen). Sätt på musik vid mål och halvlek. <a href="https://open.spotify.com/playlist/7mTvHEOYfEvRaBfLv4woRl?si=YvKn-hd8QaCwT5RSvP-u6A&amp;pi=QkIk-ucvQwKT7">Spotify-lista</a>.</li>
+    <li>Ta foton under dagen — både våra killar och övriga lag.</li>
+  </ul>
+
+  <h3>Ta med</h3>
+  <ul>
+    <li>Laddad mobil med <strong>Cup Manager Admin</strong> installerad (se nedan).</li>
+  </ul>
+
+  <h3>Appen</h3>
+  <p>Ladda ner <strong>Cup Manager Admin</strong> innan fredag:</p>
+  <ul>
+    <li>iOS: <a href="https://apps.apple.com/se/app/cup-manager-admin/id1114536491">App Store</a></li>
+    <li>Android: <a href="https://play.google.com/store/apps/details?id=com.cupmanager.admin">Google Play</a></li>
+  </ul>
+  <table class="table-clean">
+    <thead><tr><th>Hall</th><th>Kod</th><th>Vad görs i appen</th></tr></thead>
+    <tbody>
+      <tr><td>Glömsta</td><td>kolla chatten</td><td>Målskytt + assist <em>live</em> under matcherna</td></tr>
+      <tr><td>Utsälje</td><td>kolla chatten</td><td>Laguppställningar + ev slutresultat (stäm av med tränarna)</td></tr>
+      <tr><td>Kvarnberga</td><td>—</td><td>Ingen app. P14 får inte tävla pga ålder, bara spela — inga resultat rapporteras.</td></tr>
+    </tbody>
+  </table>
+  <div class="callout">
+    <strong>Tutsignalen i Glömsta funkar inte</strong> — domarna måste blåsa i pipan när halvlekar/halvtidsvila är slut. Ska lagas i sommar. Påminn domarna.
+  </div>
+
+  <h3>Schema-ark i Glömsta</h3>
+  <p>Finns på plats. Första matchen tas av Johan S + Matteo. Övriga fyller i själva beroende på om man coachar eller inte.</p>
+  <div class="thumbrow">
+    <figure>
+      <img src="images/sek-fyll-i.jpg" alt="Sekretariatsschema Glömsta">
+      <figcaption>Att fylla i på plats i Glömsta</figcaption>
+    </figure>
+    <figure>
+      <img src="images/sek-glomsta.jpg" alt="Sekretariat Glömsta info">
+      <figcaption>Två på morgonen, två vid slutet. Utskriven lista på plats.</figcaption>
+    </figure>
+  </div>
+
+</section>
+
+<!-- CAFÉ -->
+<section id="cafe">
+  <h2><span class="role-tag">Roll</span>Café</h2>
+
+  <h3>Arbetsuppgifter</h3>
+  <ul>
+    <li>Göra kaffe, fylla på fika, <strong>koka korv i omgångar mellan 10:00 och 19:00</strong>.</li>
+    <li>Prissätt bakverk om de är olika stora (grundpris 20 kr/st).</li>
+    <li>Försök få till självbetjäning: "räkna ihop själv och swisha" — annars tar det tid när alla ska ha hjälp att räkna och kontrollera swish.</li>
+    <li>Dela ut kuvert med hamburgarkuponger + medaljer till lagen när de kommer (finns på plats, preppade av Magnus på fredag kvällen).</li>
+    <li>Säg till hallansvarig i tid om något börjar ta slut — särskilt i Kvarnberga/Utsälje där bara bokad personal finns.</li>
+  </ul>
+
+  <h3>Per hall</h3>
+  <div class="per-hall">
+    <strong>Glömsta:</strong> allt finns utom färskvaror och frysta hamburgare. Caféet behöver sorteras/göras fint inför öppning. Sortera läsk i olika kylar så det går att hitta.
+  </div>
+  <div class="per-hall">
+    <strong>Kvarnbergshallen:</strong> orörd — mer att göra där. Plats för caféet inne vid entrén och i korridoren till hallen.
+  </div>
+  <div class="per-hall">
+    <strong>Utsälje:</strong> vattenkokare finns, men bara en vanlig (långsam) kaffebryggare. Magnus C tar med 1–2 stora kaffekokare med termosar från jobbet.
+  </div>
+
+  <div class="callout info">
+    <strong>Tidsreferens lördag Kvarnberga:</strong> kaffe + fralla räcker till 08:00. Caféet behöver inte vara helt klart förrän ca 08:45.
+  </div>
+
+  <h3>Kuvert till lagen (preppade fredag)</h3>
+  <p>Innehåller hamburgarkuponger + medaljer (årgång 2014). Caféet delar ut till lagen när de kommer.</p>
+  <div class="thumbrow">
+    <figure><img src="images/kuvert-info.jpg" alt="Kuvert info"></figure>
+    <figure><img src="images/kuvert-innehall.jpg" alt="Kuvert innehåll"></figure>
+  </div>
+</section>
+
+<!-- GRILL -->
+<section id="grill">
+  <h2><span class="role-tag">Roll</span>Grill, hamburgare &amp; dricka</h2>
+
+  <h3>Arbetsuppgifter</h3>
+  <ul>
+    <li>Starta upp grillar, grilla hamburgare, lämna ut till de som köpt.</li>
+    <li><strong>Servering kl 11:00–13:30.</strong> Rea ut grillade hamburgare om det behövs i slutet.</li>
+    <li>Ställa ihop och ställa in grillen i skolan/släpet efter passet.</li>
+    <li>Grillen behöver tändare (finns).</li>
+    <li>Ha koll på tillbehör och fyll på — säg till café eller hallansvarig som kan fixa.</li>
+    <li>Ta på jacka och handskar; detta sker utomhus.</li>
+  </ul>
+
+  <h3>Uppställning (bordsupplägg)</h3>
+  <ul>
+    <li><strong>Bord 1:</strong> bröd, hamburgerpapper, swishlapp, prislista, dricka.</li>
+    <li><strong>Bord 2:</strong> självplock av tillbehör (bra att kunna gå runt för att slippa kö).</li>
+    <li><strong>Flöde:</strong> lämna ut bröd i papper efter betalning → köparen hämtar tillbehör själv → hämtar hamburgaren vid grillen.</li>
+  </ul>
+
+  <h3>Tillbehör</h3>
+  <p>Olika skålar med skivor av tomat, lök och gurka. Skuren sallad, ostskivor, ketchup, dressing, grillkrydda.</p>
+
+  <h3>Lagbiljetter</h3>
+  <div class="callout info">
+    Varje lag har redan köpt hamburgare inkl dryck och har <strong>biljetter</strong> för detta. Gäller hamburgare + en burk läsk/Festis (<em>ej Vitamin Well</em>). Undantag: <strong>ej söndag i Glömsta</strong>.
+  </div>
+
+  <h3>Utrustning</h3>
+  <ul>
+    <li>Weber babyQ från Erik Ehrner (4 burgare åt gången).</li>
+    <li>Större grill i reserv från Teo.</li>
+    <li>Varmhållare från Helene Kane.</li>
+  </ul>
+
+  <h3>Placering</h3>
+  <ul>
+    <li>Kvarnberga: tak ute för grillning (regn prognosticerat lördag).</li>
+  </ul>
+
+  <div class="callout">
+    <strong>Försäljningsregel:</strong> hamburgare + dricka = <em>burk eller Festis</em>. Inte Vitamin Well, inte Power.
+  </div>
+
+  <h3>Ta med</h3>
+  <ul>
+    <li>Kylväska med frysta klampar för hamburgare (även för mjölk till caféet). <strong>Gäller Kvarnberga &amp; Utsälje.</strong></li>
+  </ul>
+</section>
+
+<!-- HALLANSVARIG -->
+<section id="hallansvarig">
+  <h2><span class="role-tag">Roll</span>Hallansvarig (lokalansvarig)</h2>
+  <p>Finns till för att underlätta på plats för alla andra pass. Benämns ibland <em>lokalansvarig</em>.</p>
+
+  <h3>Arbetsuppgifter</h3>
+  <ul>
+    <li>Lämna biljett till mat och dricka till varje domare (en biljett per domare).</li>
+    <li>Stötta café och grill när något börjar ta slut.</li>
+    <li>Åka iväg och handla extra om det behövs.</li>
+  </ul>
+
+  <h3>Ta med</h3>
+  <ul>
+    <li>Fotboll (ute) till Glömsta respektive Kvarnberga — låna ut till lag vid förfrågan under dagen.</li>
+  </ul>
+
+  <div class="callout info">
+    <strong>Vi hjälps åt</strong> vid öppning och stängning av hall, café och grill.
+  </div>
+</section>
+
+<!-- BAKNING -->
+<section id="bakning">
+  <h2><span class="role-tag">Roll</span>Bakning</h2>
+  <ul>
+    <li>Pris: <strong>20 kr/st</strong> — tänk på det storleksmässigt.</li>
+    <li>Inget bak-tvång, men uppskattat. Förra årets fikaförsäljning var bäst på turneringen.</li>
+    <li>Lämna på lördag enligt hallfördelning — till ditt första pass eller skicka med sonen.</li>
+  </ul>
+
+  <h3>Ta med</h3>
+  <ul>
+    <li>Eget bak enligt fördelningen nedan.</li>
+  </ul>
+  <h3>Fördelning per hall (lämna lördag)</h3>
+  <div class="grid">
+    <div>
+      <table class="table-clean">
+        <thead><tr><th>Glömsta</th></tr></thead>
+        <tbody>
+          <tr><td>Edvard</td></tr>
+          <tr><td>Alfred</td></tr>
+          <tr><td>Arsenis</td></tr>
+          <tr><td>Felix</td></tr>
+          <tr><td>Gustav</td></tr>
+          <tr><td>Levi</td></tr>
+          <tr><td>Love</td></tr>
+          <tr><td>Noah PL</td></tr>
+          <tr><td>Noah R</td></tr>
+          <tr><td>Vide</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <table class="table-clean">
+        <thead><tr><th>Kvarnberg</th></tr></thead>
+        <tbody>
+          <tr><td>Anton</td></tr>
+          <tr><td>Assar</td></tr>
+          <tr><td>Filip</td></tr>
+          <tr><td>Frans</td></tr>
+          <tr><td>Hugo</td></tr>
+          <tr><td>Lexus</td></tr>
+          <tr><td>Liam</td></tr>
+          <tr><td>Oscar</td></tr>
+          <tr><td>Otto</td></tr>
+          <tr><td>Petter</td></tr>
+          <tr><td>Samuel</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FREDAG -->
+<section id="fredag">
+  <h2>Fredag kväll — förberedelse</h2>
+  <ul>
+    <li>Iordningställning i Glömsta ca <strong>17:00</strong>. Magnus C är på plats 17:05.</li>
+    <li>Kvarnbergshallen: tillgänglig efter basketträning 20:30. Formell tid i bokningssystemet fram till 22.</li>
+    <li>Lördag morgon: Magnus svänger förbi Kvarnberga strax före 07:00 och är i Glömsta ca 07:20 (nycklar).</li>
+    <li>Parkering Kvarnberga: GPS till <code>Östergårdsvägen 24</code> (sidoingång). Villagata utan parkering — parkera sedan på skolan (3 timmar gratis med app).</li>
+  </ul>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt">
+  <h2>Kontakt</h2>
+  <ul>
+    <li><strong>Maria Brolin</strong> (huvudplanerare): kolla chatten</li>
+    <li><strong>Magnus Christiansen</strong>: nycklar, kuvert, app-koder, hall-logistik</li>
+  </ul>
+</section>
+
+<footer>
+  Sammanställt från WhatsApp-tråden "Planering Segeltorpscupen" (feb–april 2026). Branding enligt Segeltorps IF IBF.
+</footer>
+
+</main>
+
+</body>
+</html>
