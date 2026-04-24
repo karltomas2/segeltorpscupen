@@ -1,4 +1,4 @@
-# Segeltorpscupen 2026 — spickkomihåg
+# Segeltorpscupen 2026 — lathund
 
 Statisk sida för familjerna i P13/P14 inför Segeltorpscupen 25–26 april 2026.
 
